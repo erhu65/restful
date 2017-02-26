@@ -64,7 +64,7 @@ exports.list_groups = function()
 			}
 		}
 	}
-	
+
 	return resultArray;
 };
 
