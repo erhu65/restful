@@ -2,13 +2,20 @@ var fs = require('fs');
 
 function read_json_file()
 {
-	var file = './data/contacts.json';	
-	return fs.readFileSync(file);
+    var file = './data/contacts.json';
+    return fs.readFileSync(file);
+}
+
+
+function read_xml_file()
+{
+    var file = './data/note.xml';
+    return fs.readFileSync(file);
 }
 
 exports.list = function()
-{	
-	return JSON.parse(read_json_file());	
+{
+    return JSON.parse(read_json_file());
 };
 
 exports.query = function(number)
@@ -66,7 +73,13 @@ exports.list_groups = function()
 	}
 
 	return resultArray;
+}
+exports.list_groups_in_xml = function()
+{
+    var xmlStr = read_xml_file();
+    return xmlStr;
 };
+;
 
 exports.get_members = function(group_name)
 {

@@ -39,9 +39,23 @@ app.get('/contacts/:number', function(request, response) {
 });
 
 app.get('/groups', function(request, response) {
-    console.log ('groups');
-    response.setHeader('content-type', 'application/json');
-    response.end(JSON.stringify(contacts.list_groups()));
+    //application/json
+    //text/xml
+    response.format({
+      'text/xml': function() {
+          response.send(contacts.list_groups_in_xml());
+      },
+        'application/json': function () {
+            response.end(JSON.stringify(contacts.list_groups()));
+        },
+        'default': function () {
+            response.status(406).send('Not Acceptable')
+        }
+    });
+
+    // console.log ('groups');
+    // response.setHeader('content-type', 'application/json');
+    // response.end(JSON.stringify(contacts.list_groups()));
 });
 
 app.get('/groups/:name', function(request, response) {
