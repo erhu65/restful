@@ -42,7 +42,7 @@ describe('Contact: models', function () {
 
   describe('#create()', function () {
     it('Should create a new Contact', function (done) {
-      
+
       var contactModel = {
     		  "firstname":"John",
     		  "lastname":"Douglas",
@@ -55,7 +55,7 @@ describe('Contact: models', function () {
     		  "emailaddresses":["j.douglas@xyz.com"],
     		  "othercontactnumbers":['+359777223346','+359777223347']
       };
-      
+
       Contact.create(contactModel, function (err, createdModel) {
         // Check that no error occured
         should.not.exist(err);
