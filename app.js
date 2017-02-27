@@ -15,6 +15,7 @@ var express = require('express')
     , _v2 = require('./modules/contactdataservice_v2')
     ,passport = require('passport')
     , BasicStrategy = require('passport-http').BasicStrategy
+    ,admin = require('./modules/admin')
     , dataservice = require('./modules/contactdataservice');
 var app = express();
 var url = require('url');
@@ -38,7 +39,8 @@ app.set('view engine', 'jade');
 app.use(methodOverride());
 app.use(expressPaginate.middleware(10,100));
 app.use(bodyParser.json());
-app.use(passport.initialize());
+
+
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -118,6 +120,7 @@ passport.use(new BasicStrategy(
                     return done(error);
                 } else {
                     if (!user) {
+                        console.log(user);
                         console.log('unknown user');
                         return done(error);
                     } else {
@@ -127,8 +130,6 @@ passport.use(new BasicStrategy(
                 }
             });
     }));
-
-
 
 
 app.get('/contacts', function(request, response) {
@@ -222,7 +223,7 @@ app.delete('/contacts/:primarycontactnumber/image', function(request, response){
 });
 
 
-app.get('/v2/contacts', passport.authenticate('basic', { session: false }), function(request, response) {
+app.get('/v2/contacts', function(request, response) {
     var get_params = url.parse(request.url, true).query;
 
     if (Object.keys(get_params).length == 0)
@@ -250,6 +251,30 @@ app.get('/v2/contacts', passport.authenticate('basic', { session: false }), func
 });
 
 
+app.post('/admin'
+    ,passport.authenticate('basic', {session: false})
+    ,function(request, response) {
+
+        authorize(request.user, response);
+        if(!response.closed){
+
+            admin.update(AuthUser, request.body, response);
+        }
+
+});
+
+
+function authorize(user, response){
+    console.log(user);
+    if((user == null) || (user.role != 'Admin')) {
+        response.writeHeader(403, {'Content-Type': 'text/plain'});
+        response.end('Forbidden');
+        consl
+        return;
+    }
+
+}
+
 app.get('/v2/contacts/:primarycontactnumber/image', function(request, response){
     var gfs = Grid(mongodb.db, mongoose.mongo);
     _v2.getImage(gfs, request.params.primarycontactnumber, response);
@@ -267,6 +292,8 @@ app.delete('/v2/contacts/:primarycontactnumber/image', function(request, respons
     var gfs = Grid(mongodb.db, mongoose.mongo);
     _v2.deleteImage(gfs, mongodb.db, request.params.primarycontactnumber, response);
 })
+
+
 
 
 function toContact(body)
