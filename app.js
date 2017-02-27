@@ -8,6 +8,8 @@ var express = require('express')
     , errorHandler = require('errorhandler')
     , mongoose = require('mongoose')
     , Grid = require('gridfs-stream')
+    , expressPaginate = require('express-paginate')
+    , mongoosePaginate = require('mongoose-paginate')
     , _v1 = require('./modules/contactdataservice_v1')
     , _v2 = require('./modules/contactdataservice_v2')
     , dataservice = require('./modules/contactdataservice');
@@ -21,6 +23,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 app.use(methodOverride());
+app.use(expressPaginate.middleware(10,100));
 app.use(bodyParser.json());
 
 // parse application/x-www-form-urlencoded
@@ -63,8 +66,8 @@ var contactSchema = new mongoose.Schema({
     groups: [String]
 });
 
+contactSchema.plugin(mongoosePaginate);
 var Contact = mongoose.model('Contact', contactSchema);
-
 
 /*
 * app.get('/contacts/:number', function(request, response) {
@@ -94,6 +97,13 @@ var Contact = mongoose.model('Contact', contactSchema);
 
  * */
 
+app.get('/contacts/', function(request, response) {
+    var get_params = url.parse(request.url, true).query;
+
+    console.log('redirecting to /v2/contacts');
+    response.writeHeader(302, {'location': '/v2/contacts/'});
+    response.end('Version 2 is found at URL /v2/contacts/');
+});
 
 //v1
 
@@ -152,6 +162,34 @@ app.post('/contacts/:primarycontactnumber/image', function(request, response){
 app.delete('/contacts/:primarycontactnumber/image', function(request, response){
     var gfs = Grid(mongodb.db, mongoose.mongo);
     _v2.deleteImage(gfs, mongodb.db, request.params.primarycontactnumber, response);
+});
+
+
+app.get('/v2/contacts', function(request, response) {
+    var get_params = url.parse(request.url, true).query;
+
+    if (Object.keys(get_params).length == 0)
+    {
+        _v2.paginate(Contact, request, response);
+    }
+    else
+    {
+
+        if (get_params['limit'] != null || get_params['page'] !=null)
+        {
+            _v2.paginate(Contact, request, response);
+        }
+        else
+        {
+            var key = Object.keys(get_params)[0];
+            var value = get_params[key];
+
+            _v2.query_by_arg(Contact,
+                key,
+                value,
+                response);
+        }
+    }
 });
 
 

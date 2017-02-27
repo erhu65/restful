@@ -200,7 +200,7 @@ exports.list = function (model, response) {
 }
 
 exports.paginate = function (model, request, response) {
-			
+			console.log("page: "+request.query.page+', limit: '+ request.query.limit);
 	model.paginate({},
 			{page: request.query.page, limit: request.query.limit},
 			function(error, result) {
