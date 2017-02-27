@@ -13,7 +13,8 @@ var express = require('express')
     , CacheControl = require("express-cache-control")
     , _v1 = require('./modules/contactdataservice_v1')
     , _v2 = require('./modules/contactdataservice_v2')
-    ,auth = require('basic-auth')
+    ,passport = require('passport')
+    , BasicStrategy = require('passport-http').BasicStrategy
     , dataservice = require('./modules/contactdataservice');
 var app = express();
 var url = require('url');
@@ -37,6 +38,7 @@ app.set('view engine', 'jade');
 app.use(methodOverride());
 app.use(expressPaginate.middleware(10,100));
 app.use(bodyParser.json());
+app.use(passport.initialize());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -107,38 +109,26 @@ adminUser.save(function(error) {
     }
 });
 
-app.use(function(request, response, next) {
-    var user = auth(request);
-    if (user === undefined) {
-        console.log('User information is not available in the request');
-        response.statusCode = 401;
-        response.setHeader('WWW-Authenticate', 'Basic');
-        response.end('Unauthorized');
-    } else {
-        authenticate(user, response, next);
-    }
-});
+passport.use(new BasicStrategy(
+    function(username, password, done) {
+        AuthUser.findOne({username: username, password:  password},
+            function(error, user) {
+                if (error) {
+                    console.log(error);
+                    return done(error);
+                } else {
+                    if (!user) {
+                        console.log('unknown user');
+                        return done(error);
+                    } else {
+                        console.log(user.username + ' authenticated successfully');
+                        return done(null, user);
+                    }
+                }
+            });
+    }));
 
-function authenticate(user, response, next) {
-    var result = false;
-    AuthUser.findOne({username: user['name'], password:  user['pass']}, function(error, data) {
-        if (error) {
-            console.log(error);
-            response.statusCode = 401;
-            response.end('Unauthorized');
-        } else {
 
-            if (!data) {
-                console.log('unknown user');
-                response.statusCode = 401;
-                response.end('Unauthorized');
-            } else {
-                console.log(data.username + ' authenticated successfully');
-                next();
-            }
-        }
-    });
-}
 
 
 app.get('/contacts', function(request, response) {
@@ -232,7 +222,7 @@ app.delete('/contacts/:primarycontactnumber/image', function(request, response){
 });
 
 
-app.get('/v2/contacts', function(request, response) {
+app.get('/v2/contacts', passport.authenticate('basic', { session: false }), function(request, response) {
     var get_params = url.parse(request.url, true).query;
 
     if (Object.keys(get_params).length == 0)
