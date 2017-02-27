@@ -7,6 +7,7 @@ var express = require('express')
     , methodOverride = require('method-override')
     , errorHandler = require('errorhandler')
     , mongoose = require('mongoose')
+    , Grid = require('gridfs-stream')
     , _v1 = require('./modules/contactdataservice_v1')
     , _v2 = require('./modules/contactdataservice_v2')
     , dataservice = require('./modules/contactdataservice');
@@ -47,7 +48,7 @@ mongoose.connect('mongodb://172.20.10.4:27017/contacts', options, function(error
     }
     // Check error in initial connection. There is no 2nd param to the callback.
 });
-
+var mongodb = mongoose.connection;
 
 var contactSchema = new mongoose.Schema({
     primarycontactnumber: {type: String, index: {unique: true}},
@@ -135,6 +136,42 @@ app.get('/v1/contacts/', function(request, response) {
 });
 
 //v1
+
+
+app.get('/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.getImage(gfs, request.params.primarycontactnumber, response);
+
+})
+
+app.post('/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.updateImage(gfs, request, response);
+})
+
+app.delete('/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.deleteImage(gfs, mongodb.db, request.params.primarycontactnumber, response);
+});
+
+
+app.get('/v2/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.getImage(gfs, request.params.primarycontactnumber, response);
+
+})
+
+
+app.post('/v2/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.updateImage(gfs, request, response);
+})
+
+
+app.delete('/v2/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.deleteImage(gfs, mongodb.db, request.params.primarycontactnumber, response);
+})
 
 
 function toContact(body)
