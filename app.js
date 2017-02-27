@@ -10,11 +10,22 @@ var express = require('express')
     , Grid = require('gridfs-stream')
     , expressPaginate = require('express-paginate')
     , mongoosePaginate = require('mongoose-paginate')
+    , CacheControl = require("express-cache-control")
     , _v1 = require('./modules/contactdataservice_v1')
     , _v2 = require('./modules/contactdataservice_v2')
     , dataservice = require('./modules/contactdataservice');
 var app = express();
 var url = require('url');
+
+var cache = new CacheControl().middleware;
+
+var cacheControl = require('express-cache-controller');
+
+app.use(cacheControl());
+
+app.use(cacheControl({
+    maxAge: 60
+}));
 
 
 // all environments
@@ -28,6 +39,8 @@ app.use(bodyParser.json());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
+
+
 
 // development only
 if ('development' == app.get('env')) {
@@ -97,12 +110,35 @@ var Contact = mongoose.model('Contact', contactSchema);
 
  * */
 
-app.get('/contacts/', function(request, response) {
+app.get('/contacts', function(request, response) {
+    response.cacheControl = {
+        maxAge: 120
+    };
     var get_params = url.parse(request.url, true).query;
 
-    console.log('redirecting to /v2/contacts');
-    response.writeHeader(302, {'location': '/v2/contacts/'});
-    response.end('Version 2 is found at URL /v2/contacts/');
+
+    if (Object.keys(get_params).length == 0)
+    {
+        _v2.list(Contact, response);
+    }
+    else
+    {
+
+        if (get_params['limit'] != null || get_params['page'] !=null)
+        {
+            _v2.paginate(Contact, request, response);
+        }
+        else
+        {
+            var key = Object.keys(get_params)[0];
+            var value = get_params[key];
+
+            _v2.query_by_arg(Contact,
+                key,
+                value,
+                response);
+        }
+    }
 });
 
 //v1
