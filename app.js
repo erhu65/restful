@@ -13,6 +13,7 @@ var express = require('express')
     , CacheControl = require("express-cache-control")
     , _v1 = require('./modules/contactdataservice_v1')
     , _v2 = require('./modules/contactdataservice_v2')
+    ,auth = require('basic-auth')
     , dataservice = require('./modules/contactdataservice');
 var app = express();
 var url = require('url');
@@ -82,33 +83,63 @@ var contactSchema = new mongoose.Schema({
 contactSchema.plugin(mongoosePaginate);
 var Contact = mongoose.model('Contact', contactSchema);
 
-/*
-* app.get('/contacts/:number', function(request, response) {
 
- console.log(request.url + ' : querying for ' + request.params.number);
- dataservice.findByNumber(Contact, request.params.number, response);
- });
+var authUserSchema = new mongoose.Schema({
+    username:  {type: String, index: {unique: true}},
+    password: String,
+    role: String,
+});
 
+var AuthUser = mongoose.model('AuthUser', authUserSchema);
 
- app.post('/contacts', function(request, response) {
- dataservice.update(Contact, request.body, response)
- });
+var adminUser = new AuthUser({
+    username: 'admin',
+    password: 'admin',
+    role: 'Admin'
+});
 
- app.put('/contacts', function(request, response) {
- dataservice.create(Contact, request.body, response)
- });
+adminUser.save(function(error) {
+    if (!error) {
+        adminUser.save();
+        console.log('Creating Admin user');
+    } else {
+        console.log('Admin user already exist');
+    }
+});
 
+app.use(function(request, response, next) {
+    var user = auth(request);
+    if (user === undefined) {
+        console.log('User information is not available in the request');
+        response.statusCode = 401;
+        response.setHeader('WWW-Authenticate', 'Basic');
+        response.end('Unauthorized');
+    } else {
+        authenticate(user, response, next);
+    }
+});
 
- app.delete('/contacts/:primarycontactnumber', function(request, response) {
- console.log(dataservice.remove(Contact, request.params.primarycontactnumber, response));
- });
+function authenticate(user, response, next) {
+    var result = false;
+    AuthUser.findOne({username: user['name'], password:  user['pass']}, function(error, data) {
+        if (error) {
+            console.log(error);
+            response.statusCode = 401;
+            response.end('Unauthorized');
+        } else {
 
- app.get('/contacts', function(request, response) {
+            if (!data) {
+                console.log('unknown user');
+                response.statusCode = 401;
+                response.end('Unauthorized');
+            } else {
+                console.log(data.username + ' authenticated successfully');
+                next();
+            }
+        }
+    });
+}
 
- dataservice.list(Contact, response);
- });
-
- * */
 
 app.get('/contacts', function(request, response) {
     response.cacheControl = {
