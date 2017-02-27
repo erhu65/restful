@@ -14,8 +14,10 @@ var express = require('express')
     , _v1 = require('./modules/contactdataservice_v1')
     , _v2 = require('./modules/contactdataservice_v2')
     ,passport = require('passport')
-    , BasicStrategy = require('passport-http').BasicStrategy
+    ,BasicStrategy = require('passport-http').BasicStrategy
     ,admin = require('./modules/admin')
+    , fs = require('fs')
+    ,https = require('https')
     , dataservice = require('./modules/contactdataservice');
 var app = express();
 var url = require('url');
@@ -32,7 +34,9 @@ app.use(cacheControl({
 
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+//app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3443);
+
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
@@ -161,6 +165,15 @@ app.get('/contacts', function(request, response) {
                 response);
         }
     }
+});
+
+
+app.get('/contacts', cache('minutes',1), function(request, response) {
+    var get_params = url.parse(request.url, true).query;
+    console.log('redirecting to /v2/contacts');
+    response.writeHead(302, {'Location' : '/v2/contacts/'});
+    response.end('Version 2 is found at URI /v2/contacts/ ');
+
 });
 
 //v1
@@ -315,5 +328,8 @@ function toContact(body)
 
 
 
+var options = {key  : fs.readFileSync('./server.key'),
+    cert : fs.readFileSync('./server.crt')};
+
 console.log('Running at port ' + app.get('port'));
-http.createServer(app).listen(app.get('port'));
+https.createServer(options, app).listen(app.get('port'));
