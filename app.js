@@ -1,147 +1,43 @@
-/**
- *
- dependencies.
- */
+var mongoose = require('mongoose');
 
-
-
-var express = require('express')
-    , http = require('http')
-    , path = require('path')
-    , bodyParser = require('body-parser')
-    , logger = require('morgan')
-    , methodOverride = require('method-override')
-    , errorHandler = require('errorhandler')
-    , levelup = require('levelup');
-var app = express();
-var url = require('url');
-
-// all environments
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-
-app.use(methodOverride());
-
-app.use(bodyParser.json()); // for parsing application/json
-app.use(bodyParser.urlencoded()); // for parsing application/x-www-form-urlencoded
-
-// in latest body-parser use like below.
-//app.use(bodyParser.urlencoded({ extended: true }));
-
-// development only
-if ('development' == app.get('env')) {
-    app.use(errorHandler());
-}
-
-
-var db = levelup('./contact',  {valueEncoding: 'json'});
-
-
-app.get('/contacts/:number', function(request, response) {
-
-    console.log(request.url + ' : querying for ' + request.params.number);
-
-    db.get(request.params.number, function(error, data) {
-
-        if (error) {
-            response.writeHead(404, {
-                'Content-Type' : 'text/plain'});
-            response.end('Not Found');
-            return;
-        }
-
-        response.setHeader('content-type', 'application/json');
-        response.send(data);
-    });
+var contactSchema = new mongoose.Schema({
+    primarycontactnumber: {type: String, index: {unique: true}},
+    firstname: String,
+    lastname: String,
+    title: String,
+    company: String,
+    jobtitle: String,
+    othercontactnumbers: [String],
+    primaryemailaddress: String,
+    emailaddresses: [String],
+    groups: [String]
 });
 
+var Contact = mongoose.model('Contact', contactSchema);
 
-app.post('/contacts/:number', function(request, response) {
 
-    console.log('Adding new contact with primary number' + request.params.number);
-    console.log("post /contacts/:number");
-    console.log(request.body);
-
-    db.put(request.params.number, request.body, function(error) {
-        if (error) {
-            response.writeHead(500, {
-                'Content-Type' : 'text/plain'});
-            response.end('Internal server error');
-            return;
-        }
-
-        response.send(request.params.number + ' successfully inserted');
-    });
+var john_douglas = new Contact({
+    firstname: "John",
+    lastname: "Douglas",
+    title: "Mr.",
+    company: "Dev Inc.",
+    jobtitle: "Developer",
+    primarycontactnumber: "+359777223345",
+    othercontactnumbers: [],
+    primaryemailaddress: "john.douglas@xyz.com",
+    emailaddresses: ["j.douglas@xyz.com"],
+    groups: ["Dev"]
 });
+var db = mongoose.connection;
+mongoose.connect('mongodb://admin:admin123@local.bonray.com.tw:27017/admin');
 
-app.post('/contacts', function(request, response) {
-
-    console.log('Adding new contact with primary number' + request.params.number);
-    db.put(request.params.number, request.body, function(error) {
-        if (error) {
-            response.writeHead(500, {
-                'Content-Type' : 'text/plain'});
-            response.end('Internal server error');
-            return;
-        }
-
-        response.send(request.params.number + ' successfully inserted');
-    });
+john_douglas.save(function(error){
+    if (error) {
+        console.log('Error while saving contact for Mr. John Douglas');
+        console.log(error);
+    }
+    else {
+        john_douglas.save();
+        console.log('Contact for Mr. John Douglas has been successfully	stored');
+    }
 });
-
-app.delete('/contacts/:number', function(request, response) {
-
-    console.log('Deleting contact with primary number' + request.params.number);
-    db.del(request.params.number, function(error) {
-        if (error) {
-            response.writeHead(500, {
-                'Content-Type' : 'text/plain'});
-            response.end('Internal server error');
-            return;
-        }
-
-        response.send(request.params.number + ' successfully deleted');
-    });
-});
-
-app.get('/contacts', function(request, response) {
-    console.log('Listing all contacts');
-    var is_first = true;
-
-
-    response.setHeader('content-type', 'application/json');
-
-    db.createReadStream()
-        .on('data', function (data) {
-            console.log(data.value);
-            if (is_first == true)
-            {
-                response.write('[');
-            }
-            else
-            {
-                response.write(',');
-            }
-            response.write(JSON.stringify(data.value));
-
-            is_first = false;
-
-        })
-        .on('error', function (error) {
-            console.log('Error while reading', error)
-        })
-        .on('close', function () {
-            console.log('Closing db stream');
-        })
-        .on('end', function () {
-            console.log('Db stream closed');
-            response.end(']');
-
-        })
-
-});
-
-console.log('Running at port ' + app.get('port'));
-http.createServer(app).listen(app.get('port'));
-
