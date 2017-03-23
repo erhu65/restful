@@ -143,8 +143,8 @@ exports.create = function (model, requestBody, response) {
 						data.save(function (error) {
 							if (!error) {							
 								data.save();
-								response.end('Updated');
-								console.log('Successfully Updated contat with primary contact number: ' + primarynumber);
+								response.end('craete Updated');
+								console.log('Successfully craete  Updated contat with primary contact number: ' + primarynumber);
 							} else {
 								console.log('Error while saving contact with primary contact number:' + primarynumber);
 								console.log(error);

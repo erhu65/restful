@@ -9,6 +9,7 @@ var express = require('express')
     , dataservice = require('./modules/contactdataservice');
 var app = express();
 var url = require('url');
+mongoose.Promise = global.Promise;
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -17,15 +18,35 @@ app.set('view engine', 'jade');
 
 app.use(methodOverride());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded()); // for parsing application/x-www-form-urlencoded
 
 // development only
 if ('development' == app.get('env')) {
     app.use(errorHandler());
 }
 
-//var mongodb = mongoose.connection;
-mongoose.connect('mongodb://admin:admin123@local.bonray.com.tw:27017/admin');
 
+//用這種方式，DB不存在時，會自動產生
+var options = {
+    db: {native_parser: true},
+    replset:{rs_name: 'myReplicaSetName'},
+    user: 'admin',
+    pass: 'admin123',
+    auth:{
+        authdb: 'admin'
+    }
+};
+mongoose.connect('mongodb://local.bonray.com.tw:27017/contacts', options, function (error) {
+    if(error) {
+        console.log('Mongoose default connection open to ');
+        return
+    }
+
+});
+
+mongoose.connection.on('connected', function () {
+    console.log('Mongoose default connection open to ');
+});
 
 var contactSchema = new mongoose.Schema({
     primarycontactnumber: {type: String, index: {unique: true}},
