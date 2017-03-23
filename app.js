@@ -13,9 +13,8 @@ var express = require('express')
     , Grid = require('gridfs-stream')
     , expressPaginate = require('express-paginate')
     , mongoosePaginate = require('mongoose-paginate')
-    , auth = require('basic-auth')//video_note/27/78
-    //, passport = require('passport'),
-    //, BasicStrategy = require('passport-http').BasicStrategy;
+    , passport = require('passport')
+    , BasicStrategy = require('passport-http').BasicStrategy;
 
 mongoose.Promise = global.Promise;
 var app = express();
@@ -77,13 +76,14 @@ var contactSchema = new mongoose.Schema({
 
 contactSchema.plugin(mongoosePaginate);
 
+var Contact = mongoose.model('Contact', contactSchema);
 
-//video_note/27/78
 var authUserSchema = new mongoose.Schema({
     username:  {type: String, index: {unique: true}},
     password: String,
     role: String,
 });
+
 
 var AuthUser = mongoose.model('AuthUser', authUserSchema);
 
@@ -93,53 +93,37 @@ var adminUser = new AuthUser({
     role: 'Admin'
 });
 
-
 //open the comment to us http basic auth
+adminUser.save(function(error) {
+    if (!error) {
+        adminUser.save();
+        console.log('Creating Admin user');
+    } else {
+        console.log('Admin user already exist');
+    }
+});
 
- adminUser.save(function(error) {
- if (!error) {
- adminUser.save();
- console.log('Creating Admin user');
- } else {
- console.log('Admin user already exist');
- }
- });
-
- app.use(function(request, response, next) {
- var credentials = auth(request);
- if (credentials === undefined) {
- console.log('User information is not available in the request');
- response.statusCode = 401;
- response.setHeader('WWW-Authenticate', 'Basic');
- response.end('Unauthorized');
- } else {
- authenticate(credentials.name, credentials.pass, response, next);
- }
- });
-
-
-function authenticate(_username, _password, response, callback) {
-    AuthUser.findOne({username:_username, password: _password}, function(error, data) {
-        if (error) {
-            console.log(error);
-            return;
-        } else {
-            if (!data) {
-                console.log('User not found');
-                response.statusCode = 401;
-                response.end();
-                return;
-            } else {
-                console.log(data.username + ' authenticated successfully');
-                return callback(null, data.username);
-            }
-        }
-    });
-}
-//video_note/27/78
+passport.use(new BasicStrategy(
+    function(username, password, done) {
+        AuthUser.findOne({username: username, password:  password},
+            function(error, user) {
+                if (error) {
+                    console.log(error);
+                    return done(error);
+                } else {
+                    if (!user) {
+                        console.log('unknown user');
+                        return done(error);
+                    } else {
+                        console.log(user.username + ' authenticated successfully');
+                        return done(null, user);
+                    }
+                }
+            });
+    }));
 
 
-var Contact = mongoose.model('Contact', contactSchema);
+
 
 app.get('/v1/contacts/', function(request, response) {
     var get_params = url.parse(request.url, true).query;
@@ -322,6 +306,46 @@ app.get('/a_route_behind_paywall',
     console.log('getPaidContent2');
     res.send("a_route_behind_paywall done2");
 });
+
+
+//user administration
+app.get('/admin', passport.authenticate('basic', { session: false }), function(request, response) {
+
+    authorize(request.user, response);
+    response.send('access admin page');
+
+});
+
+app.post('/admin', passport.authenticate('basic', { session: false }), function(request, response) {
+
+    authorize(request.user, response);
+    if (!response.closed) {
+        admin.update(AuthUser, request.body, response);
+    }
+});
+
+app.put('/admin', passport.authenticate('basic', { session: false }), function(request, response) {
+    authorize(request.user, response);
+    if (!response.closed) {
+        admin.create(AuthUser, request.body, response);
+    }
+});
+
+app.del('/admin/:username', passport.authenticate('basic', { session: false }), function(request, response) {
+    authorize(request.user, response);
+    if (!response.closed) {
+        admin.remove(AuthUser, request.params.username, response);
+    }
+});
+
+function authorize(user, response) {
+    if ((user == null) || (user.role != 'Admin')) {
+        response.writeHead(403, {
+            'Content-Type' : 'text/plain'});
+        response.end('Forbidden');
+        return;
+    }
+}
 
 
 function toContact(body)
