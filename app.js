@@ -6,10 +6,23 @@ var express = require('express')
     , methodOverride = require('method-override')
     , errorHandler = require('errorhandler')
     , mongoose = require('mongoose')
-    , dataservice = require('./modules/contactdataservice');
+    , _v1 = require('./modules/contactdataservice_v1')
+    , _v2 = require('./modules/contactdataservice_v2')
+    , CacheControl = require("express-cache-control")
+    , fs = require('fs')
+    , Grid = require('gridfs-stream')
+    , expressPaginate = require('express-paginate')
+    , mongoosePaginate = require('mongoose-paginate')
+    , auth = require('basic-auth')//video_note/27/78
+    //, passport = require('passport'),
+    //, BasicStrategy = require('passport-http').BasicStrategy;
+
+mongoose.Promise = global.Promise;
 var app = express();
 var url = require('url');
-mongoose.Promise = global.Promise;
+var cache = new CacheControl().middleware;
+
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -17,6 +30,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 app.use(methodOverride());
+app.use(expressPaginate.middleware(10,100));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded()); // for parsing application/x-www-form-urlencoded
 
@@ -61,31 +75,252 @@ var contactSchema = new mongoose.Schema({
     groups: [String]
 });
 
+contactSchema.plugin(mongoosePaginate);
+
+
+//video_note/27/78
+var authUserSchema = new mongoose.Schema({
+    username:  {type: String, index: {unique: true}},
+    password: String,
+    role: String,
+});
+
+var AuthUser = mongoose.model('AuthUser', authUserSchema);
+
+var adminUser = new AuthUser({
+    username: 'admin',
+    password: 'admin',
+    role: 'Admin'
+});
+
+
+//open the comment to us http basic auth
+
+ adminUser.save(function(error) {
+ if (!error) {
+ adminUser.save();
+ console.log('Creating Admin user');
+ } else {
+ console.log('Admin user already exist');
+ }
+ });
+
+ app.use(function(request, response, next) {
+ var credentials = auth(request);
+ if (credentials === undefined) {
+ console.log('User information is not available in the request');
+ response.statusCode = 401;
+ response.setHeader('WWW-Authenticate', 'Basic');
+ response.end('Unauthorized');
+ } else {
+ authenticate(credentials.name, credentials.pass, response, next);
+ }
+ });
+
+
+function authenticate(_username, _password, response, callback) {
+    AuthUser.findOne({username:_username, password: _password}, function(error, data) {
+        if (error) {
+            console.log(error);
+            return;
+        } else {
+            if (!data) {
+                console.log('User not found');
+                response.statusCode = 401;
+                response.end();
+                return;
+            } else {
+                console.log(data.username + ' authenticated successfully');
+                return callback(null, data.username);
+            }
+        }
+    });
+}
+//video_note/27/78
+
+
 var Contact = mongoose.model('Contact', contactSchema);
 
-app.get('/contacts/:number', function(request, response) {
+app.get('/v1/contacts/', function(request, response) {
+    var get_params = url.parse(request.url, true).query;
 
-    console.log(request.url + ' : querying for ' + request.params.number);
-    dataservice.findByNumber(Contact, request.params.number, response);
+    if (Object.keys(get_params).length == 0)
+    {
+        _v1.list(Contact, response);
+    }
+    else
+    {
+        var key = Object.keys(get_params)[0];
+        var value = get_params[key];
+
+        JSON.stringify(_v2.query_by_arg(Contact,
+            key,
+            value,
+            response));
+    }
 });
 
+app.get('/v1/contacts/:primarycontactnumber', function(request, response) {
 
-app.post('/contacts', function(request, response) {
-    dataservice.update(Contact, request.body, response)
+    console.log(request.url + ' : querying for ' + request.params.primarycontactnumber);
+    _v1.findByNumber(Contact, request.params.primarycontactnumber, response);
 });
 
-app.put('/contacts', function(request, response) {
-    dataservice.create(Contact, request.body, response)
+app.post('/v1/contacts/', function(request, response) {
+    _v1.update(Contact, request.body, response);
 });
 
+app.put('/v1/contacts/', function(request, response) {
+    _v1.create(Contact, request.body, response);
+});
+
+app.delete('/v1/contacts/:primarycontactnumber', function(request, response) {
+    _v1.remove(Contact, request.params.primarycontactnumber, response);
+});
+
+//version 2 default routing
+
+app.get('/contacts/:primarycontactnumber', function(request, response) {
+
+    console.log(request.url + ' : querying for ' + request.params.primarycontactnumber);
+    _v2.findByNumber(Contact, request.params.primarycontactnumber, response);
+});
+
+app.post('/contacts/', function(request, response) {
+    _v2.update(Contact, request.body, response)
+});
+
+app.put('/contacts/', function(request, response) {
+    _v2.create(Contact, request.body, response)
+});
 
 app.delete('/contacts/:primarycontactnumber', function(request, response) {
-    console.log(dataservice.remove(Contact, request.params.primarycontactnumber, response));
+    _v2.remove(Contact, request.params.primarycontactnumber, response);
 });
 
-app.get('/contacts', function(request, response) {
+app.get('/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.getImage(gfs, request.params.primarycontactnumber, response);
 
-    dataservice.list(Contact, response);
+})
+
+app.post('/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.updateImage(gfs, request, response);
+})
+
+app.delete('/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.deleteImage(gfs, mongodb.db, request.params.primarycontactnumber, response);
+});
+
+
+app.get('/contacts', cache('minutes',1), function(request, response) {
+    console.log('redirecting to /v2/contacts');
+    response.redirect('/v2/contacts')
+
+});
+
+
+app.get('/contacts/:primarycontactnumber',  function(request, response) {
+
+    console.log(request.url + ' : querying for ' + request.params.primarycontactnumber);
+    _v2.findByNumber(Contact, request.params.primarycontactnumber, response);
+});
+
+
+
+//version 2 explicit routing
+
+app.get('/v2/contacts', cache('minutes',1), function(request, response) {
+    var get_params = url.parse(request.url, true).query;
+
+    if (Object.keys(get_params).length == 0)
+    {
+        _v2.list(Contact, response);
+    }
+    else
+    {
+
+        if (get_params['limit'] != null || get_params['page'] !=null)
+        {
+            _v2.paginate(Contact, request, response);
+        }
+        else
+        {
+            var key = Object.keys(get_params)[0];
+            var value = get_params[key];
+
+            _v2.query_by_arg(Contact,
+                key,
+                value,
+                response);
+        }
+    }
+});
+
+
+app.get('/v2/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.getImage(gfs, request.params.primarycontactnumber, response);
+
+})
+
+
+app.post('/v2/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.updateImage(gfs, request, response);
+})
+
+
+app.delete('/v2/contacts/:primarycontactnumber/image', function(request, response){
+    var gfs = Grid(mongodb.db, mongoose.mongo);
+    _v2.deleteImage(gfs, mongodb.db, request.params.primarycontactnumber, response);
+})
+
+
+app.get('/v2/contacts/:primarycontactnumber', function(request, response) {
+
+    console.log(request.url + ' : querying for ' + request.params.primarycontactnumber);
+    _v2.findByNumber(Contact, request.params.primarycontactnumber, response);
+});
+
+app.post('/v2/contacts/', function(request, response) {
+    _v2.update(Contact, request.body, response)
+});
+
+app.post('/v2/contacts/:primarycontactnumber', function(request, response) {
+    _v2.update(Contact, request.body, response)
+});
+
+app.put('/v2/contacts/', function(request, response) {
+    _v2.create(Contact, request.body, response)
+});
+
+app.delete('/v2/contacts/:primarycontactnumber', function(request, response) {
+    _v2.remove(Contact, request.params.primarycontactnumber, response);
+});
+
+
+//video_notes/28/16
+app.get('/a_route_behind_paywall',
+    function checkIfPaidSubscriber (req, res, next) {
+        console.log('checkIfPaidSubscriber');
+        if (false) {
+            // continue handling this request
+            res.send("checkIfPaidSubscriber done");
+            return next('route');
+        }
+
+        next();
+    }, function getPaidContent (req, res, next) {
+        console.log('getPaidContent');
+        res.send("getPaidContent done");
+        return next('route');
+        next();
+    }, function getPaidContent2 (req, res, next) {
+    console.log('getPaidContent2');
+    res.send("a_route_behind_paywall done2");
 });
 
 
@@ -105,8 +340,6 @@ function toContact(body)
             groups: body.groups
         });
 }
-
-
 
 console.log('Running at port ' + app.get('port'));
 http.createServer(app).listen(app.get('port'));
