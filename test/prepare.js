@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+//mongoose.Promise = global.Promise;
 
 beforeEach(function (done) {
 
@@ -12,12 +13,23 @@ beforeEach(function (done) {
 
 
 	  if (mongoose.connection.readyState === 0) {
-	    mongoose.connect(config.db.test, function (err) {
-	      if (err) {
-	        throw err;
-	      }
-	      return clearDatabase();
-	    });
+
+          var options = {
+              db: {native_parser: true},
+              replset:{rs_name: 'myReplicaSetName'},
+              user: 'admin',
+              pass: 'admin123',
+              auth:{
+                  authdb: 'admin'
+              }
+          };
+          mongoose.connect('mongodb://local.bonray.com.tw:27017/contacts-test', options, function (err) {
+              if (err) {
+                  throw err;
+              }
+              return clearDatabase();
+          });
+
 	  } else {
 	    return clearDatabase();
 	  }

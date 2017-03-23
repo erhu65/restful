@@ -1,9 +1,32 @@
 var mongoose = require('mongoose');
+//mongoose.Promise = global.Promise;
+
 var should = require('should');
 var prepare = require('./prepare');
 
-mongoose.connect('mongodb://localhost/contacts-test');
 
+
+//用這種方式，DB不存在時，會自動產生
+var options = {
+    db: {native_parser: true},
+    replset:{rs_name: 'myReplicaSetName'},
+    user: 'admin',
+    pass: 'admin123',
+    auth:{
+        authdb: 'admin'
+    }
+};
+mongoose.connect('mongodb://local.bonray.com.tw:27017/contacts-test', options, function (error) {
+    if(error) {
+        console.log('Mongoose default connection open to ');
+        return
+    }
+
+});
+
+mongoose.connection.on('connected', function () {
+   console.log('Mongoose default connection open to ');
+});
 
 var contactSchema = new mongoose.Schema({
 	primarycontactnumber: {type: String, index: {unique: true}},
@@ -59,6 +82,19 @@ describe('Contact: models', function () {
       });
     });
   });
+
+
+    describe('#create()2', function () {
+        it('Should create a new Contact2', function (done) {
+            var name = 'John';
+
+            name.should.equal('John');
+
+            //Notify mocha that the test has completed
+            done();
+        });
+    });
+
 
 
 });
