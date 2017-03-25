@@ -14,8 +14,10 @@ var express = require('express')
     , Grid = require('gridfs-stream')
     , expressPaginate = require('express-paginate')
     , mongoosePaginate = require('mongoose-paginate')
+    , https = require('https')
     , passport = require('passport')
-    , BasicStrategy = require('passport-http').BasicStrategy;
+    , BasicStrategy = require('passport-http').BasicStrategy
+    , fs = require('fs');
 
 mongoose.Promise = global.Promise;
 var app = express();
@@ -32,7 +34,7 @@ app.set('view engine', 'jade');
 app.use(methodOverride());
 app.use(expressPaginate.middleware(10,100));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded()); // for parsing application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));// for parsing application/x-www-form-urlencoded
 
 // development only
 if ('development' == app.get('env')) {
@@ -332,7 +334,7 @@ app.put('/admin', passport.authenticate('basic', { session: false }), function(r
     }
 });
 
-app.del('/admin/:username', passport.authenticate('basic', { session: false }), function(request, response) {
+app.delete('/admin/:username', passport.authenticate('basic', { session: false }), function(request, response) {
     authorize(request.user, response);
     if (!response.closed) {
         admin.remove(AuthUser, request.params.username, response);
@@ -366,5 +368,12 @@ function toContact(body)
         });
 }
 
+var credentials = {
+    key: fs.readFileSync('./server.key'),
+    cert: fs.readFileSync('./server.crt')
+};
+
+
 console.log('Running at port ' + app.get('port'));
-http.createServer(app).listen(app.get('port'));
+https.createServer(credentials, app).listen(app.get('port'));
+//http.createServer(app).listen(app.get('port'));
