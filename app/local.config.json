@@ -1,9 +1,0 @@
-{
-    "config" : {
-        "db_config": {
-            "host_url": "mongodb://admin:admin123@local.bonray.com.tw:27017/admin"
-        },
-
-        "static_content": "../static/"
-    }
-}
