@@ -61,3 +61,27 @@ db.init( (err, results) => {
     app.listen(8080);
 });
 
+
+
+// simulate a request coming in every 5s, 1/10 chance of a crash
+// while processing it
+var waste_bin = [];
+
+setInterval(function () {
+
+    var b = new Buffer(1000000);
+    b.fill("x");
+    waste_bin.push(b);
+
+    console.log("got request" + new Date());
+    var randomNum = Math.round(Math.random() * 10);
+
+    if (randomNum == 1
+        || randomNum == 2
+        ||randomNum == 3
+    ){
+        throw new Error("SIMULATED CRASH!" + new Date());
+    }
+}, 1000);
+
+
