@@ -7,9 +7,11 @@ var db = require('./data/db.js'),
     page_hdlr = require('./handlers/pages.js'),
     user_hdlr = require('./handlers/users.js'),
     helpers = require('./handlers/helpers.js');
+var device = require('express-device');
 
 app.use(express.logger('dev'));
 app.use(express.bodyParser({ keepExtensions: true }));
+app.use(device.capture());
 app.use(express.static(__dirname + "/../static"));
 app.use(express.cookieParser("kitten on  keyboard"));
 app.use(express.cookieSession({
@@ -34,6 +36,14 @@ app.get('/v1/users/logged_in.json', user_hdlr.logged_in);
 app.get("/", function (req, res) {
     res.redirect("/pages/home");
     res.end();
+});
+
+app.get('/detect-device', (req, res, next) => {
+
+    res.setHeader('Content-Type', 'application/json');
+    var data = JSON.stringify({ device: req.device.type });
+    res.status(200);
+    res.send(data);
 });
 
 app.get('*', four_oh_four);
