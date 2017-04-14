@@ -1,4 +1,4 @@
-function get() {
+async function get() {
 
     console.log('get');
     return new Promise((resolve, reject) => {
@@ -6,7 +6,7 @@ function get() {
     });
 }
 
-function process(value) {
+async function process(value) {
     console.log('process');
     return new Promise((resolve, reject) => {
         setTimeout(() => resolve(`${value}-seceret2`), 100)
@@ -14,8 +14,10 @@ function process(value) {
 }
 
 
-function main() {
-    get().then(process).then(result => console.log(result));
+async function main() {
+    let val = await get();
+    let result = await process(val);
+    console.log(result)
 }
 main();
 
