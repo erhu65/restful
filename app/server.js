@@ -1,17 +1,21 @@
-function get(callback) {
+function get() {
 
     console.log('get');
-    return setTimeout(() => callback("seceret1"), 100);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve("seceret1"), 100)
+    });
 }
 
-function process(value, callback) {
+function process(value) {
     console.log('process');
-    return setTimeout(() => callback(`${value}-seceret2`), 100);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve(`${value}-seceret2`), 100)
+    });
 }
 
 
 function main() {
-    get(value => process(value, result => console.log(result)));
+    get().then(process).then(result => console.log(result));
 }
 main();
 
