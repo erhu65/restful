@@ -1,25 +1,17 @@
-async function get() {
+// 實現一個等待函數
+const delay = (interval) => {
+    return new Promise((resolve) => {
+            setTimeout(resolve, interval);
+});
+};
 
-    console.log('get');
-    return new Promise((resolve, reject) => {
-        setTimeout(() => resolve("seceret1"), 100)
-    });
-}
+const main = async () => {
+    console.log('Starting...');
 
-async function process(value) {
-    console.log('process');
-    return new Promise((resolve, reject) => {
-        setTimeout(() => resolve(`${value}-seceret2`), 100)
-    });
-}
+    // 等待五秒
+    await delay(5000);
 
+    console.log('Done after five seconds')
+};
 
-async function main() {
-    let val = await get();
-    let result = await process(val);
-    console.log(result)
-}
 main();
-
-
-
