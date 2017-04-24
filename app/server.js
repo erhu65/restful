@@ -1,17 +1,23 @@
-// 實現一個等待函數
-const delay = (interval) => {
-    return new Promise((resolve) => {
-            setTimeout(resolve, interval);
+var express = require("express");
+var app = express();
+var converter = require("./converter");
+
+app.get("/rgbToHex", function(req, res) {
+    var red   = parseInt(req.query.red, 10);
+    var green = parseInt(req.query.green, 10);
+    var blue  = parseInt(req.query.blue, 10);
+
+    var hex = converter.rgbToHex(red, green, blue);
+
+    res.send(hex);
 });
-};
 
-const main = async () => {
-    console.log('Starting...');
+app.get("/hexToRgb", function(req, res) {
+    var hex = req.query.hex;
 
-    // 等待五秒
-    await delay(5000);
+    var rgb = converter.hexToRgb(hex);
 
-    console.log('Done after five seconds')
-};
+    res.send(JSON.stringify(rgb));
+});
 
-main();
+app.listen(3000);
