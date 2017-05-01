@@ -21,8 +21,10 @@ const promisifiedDivision = promisify(delayedDivision);
 
 promisifiedDivision(10, 2)
   .then((value) => console.log(value))
-  .catch((error) => console.log(error));
+  .catch((error) => console.log(error))
+;
 
 promisifiedDivision(10, 0)
   .then((value) => console.log(value))
-  .catch((error) => console.log(error));
+  .catch((error) => console.log(error))
+;
