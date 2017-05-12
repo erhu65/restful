@@ -83,7 +83,7 @@ router.post('/login', function(req,res,next) {
                             && accountDetailModel.password) {
                             let err = {
                                 code: 900001,
-                                name:'account_not_active'
+                                name:'account_or_password_error'
                             }
                             return utils.send_failure_json(res, 900, err);
                         }
@@ -92,16 +92,18 @@ router.post('/login', function(req,res,next) {
                             && !accountDetailModel.password) {
                             let err = {
                                 code: 900003,
-                                name:'password_not_match'
+                                name:'account_or_password_error'
                             }
                             return utils.send_failure_json(res, 900, err);
                         }
                     }
 
                     if (!accountDetailModel) {
-                        var err = config.response_error.not_found;
-                        err.desc = "Account not exist";
-                        return utils.send_failure_json(res, 900, err);
+                        let err = {
+                            code: 404001,
+                            name:'account_not_exist'
+                        }
+                        return utils.send_failure_json(res, 400, err);
                     }
                 });
 

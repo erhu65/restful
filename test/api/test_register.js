@@ -472,7 +472,7 @@ describe('register/login/testItem', function () {
 
                 assert.equal(httpResponse.statusCode, 900);
                 assert.equal(resObj.code, 900001);
-                assert.equal(resObj.name, 'account_not_active');
+                assert.equal(resObj.name, 'account_or_password_error');
                 return done();
             });
         });
@@ -725,7 +725,7 @@ describe('register/login/testItem', function () {
 
                 assert.equal(httpResponse.statusCode, 900);
                 assert.equal(resObj.code, 900003);
-                assert.equal(resObj.name, 'password_not_match');
+                assert.equal(resObj.name, 'account_or_password_error');
                 return done();
             });
         });

@@ -41,7 +41,7 @@
   },
   "mongodb":{
     "db": "bonraybio-test",
-    "server": "localhost",
+    "server": "local.bonraybio.com",
     "user": "admin",
     "pass": "admin123"
   },
@@ -65,3 +65,4 @@
   "problemMail": "erhu65@gmail.com",
   "serviceName": "bonraybio"
 }
+
