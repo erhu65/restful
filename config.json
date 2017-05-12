@@ -41,7 +41,7 @@
   },
   "mongodb":{
     "db": "bonraybio-test",
-    "server": "local.bonraybio.com",
+    "server": "localhost",
     "user": "admin",
     "pass": "admin123"
   },
