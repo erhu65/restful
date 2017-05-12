@@ -2,11 +2,655 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c69a3c4-11f4-408e-8239-0d20801b23ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/promisify.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/app_index_js.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/app_index_js.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/01_arrow_function/01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/01_arrow_function/02.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/01_arrow_function/03.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/01_arrow_function/04.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/01_arrow_function/05.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/01_arrow_function/06.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/01_arrow_function/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/02_let_const/01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/02_let_const/02.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/02_let_const/03.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/02_let_const/04.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/02_let_const/05.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/02_let_const/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/03_class/01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/03_class/02.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/03_class/03.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/03_class/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/04_enhanced_object_literals/01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/04_enhanced_object_literals/02.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/04_enhanced_object_literals/03.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/04_enhanced_object_literals/04.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/04_enhanced_object_literals/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/05_map_set/01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/05_map_set/02.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/05_map_set/03.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/05_map_set/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/06_weakmap_weakset/01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/06_weakmap_weakset/02.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/06_weakmap_weakset/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/07_template/01.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter01/07_template/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/01_callback_sync_cont_passing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/01_callback_sync_cont_passing/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/02_callback_async_cont_passing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/02_callback_async_cont_passing/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/03_callback_non_cont_passing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/03_callback_non_cont_passing/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/04_callback_unpredictable/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/04_callback_unpredictable/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/05_callback_sync_api/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/05_callback_sync_api/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/06_callback_deferred_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/06_callback_deferred_execution/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/07_callback_propagating_errors/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/07_callback_propagating_errors/data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/07_callback_propagating_errors/invalid_json.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/07_callback_propagating_errors/readJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/07_callback_propagating_errors/valid_json.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_class_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_constructor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_constructor_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_function.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_function_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_guard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_guard_es2015.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_guard_es2015_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_guard_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_instance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/08_module_examples/logger_instance_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/09_module_revealing_module/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/09_module_revealing_module/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/10_module_loader/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/10_module_loader/loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/10_module_loader/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/10_module_loader/moduleA.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/10_module_loader/moduleB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/11_module_circular_dependency/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/11_module_circular_dependency/a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/11_module_circular_dependency/b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/11_module_circular_dependency/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/12_observer_event_emitter_find_pattern/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/12_observer_event_emitter_find_pattern/fileA.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/12_observer_event_emitter_find_pattern/fileB.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/12_observer_event_emitter_find_pattern/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/13_observer_event_emitter_find_pattern_class/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/13_observer_event_emitter_find_pattern_class/fileA.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/13_observer_event_emitter_find_pattern_class/fileB.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/13_observer_event_emitter_find_pattern_class/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/14_observer_sync_emit/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/14_observer_sync_emit/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/15_observer_emitter_vs_callback/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/15_observer_emitter_vs_callback/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/16_observer_event_emitter_glob/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/16_observer_event_emitter_glob/data/file1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/16_observer_event_emitter_glob/data/file2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/16_observer_event_emitter_glob/data/file3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/16_observer_event_emitter_glob/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter02/16_observer_event_emitter_glob/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/01_web_spider/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/01_web_spider/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/01_web_spider/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/01_web_spider/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/02_web_spider_functions/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/02_web_spider_functions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/02_web_spider_functions/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/02_web_spider_functions/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/03_sequential_callbacks/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/03_sequential_callbacks/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/04_web_spider_v2/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/04_web_spider_v2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/04_web_spider_v2/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/04_web_spider_v2/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/05_web_spider_v3/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/05_web_spider_v3/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/05_web_spider_v3/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/05_web_spider_v3/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/06_web_spider_v4/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/06_web_spider_v4/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/06_web_spider_v4/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/06_web_spider_v4/taskQueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/06_web_spider_v4/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/07_async_sequential_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/07_async_sequential_execution/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/07_async_sequential_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/07_async_sequential_execution/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/08_async_sequential_iteration/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/08_async_sequential_iteration/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/08_async_sequential_iteration/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/08_async_sequential_iteration/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/09_async_parallel_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/09_async_parallel_execution/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/09_async_parallel_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/09_async_parallel_execution/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/10_async_limited_parallel_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/10_async_limited_parallel_execution/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/10_async_limited_parallel_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter03/10_async_limited_parallel_execution/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/01_promisify/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/01_promisify/promisify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/01_promisify/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/02_promises_sequential_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/02_promises_sequential_execution/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/02_promises_sequential_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/02_promises_sequential_execution/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/03_promises_parallel_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/03_promises_parallel_execution/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/03_promises_parallel_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/03_promises_parallel_execution/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/04_promises_limited_parallel_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/04_promises_limited_parallel_execution/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/04_promises_limited_parallel_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/04_promises_limited_parallel_execution/taskQueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/04_promises_limited_parallel_execution/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/05_exposing_callback_and_promises/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/05_exposing_callback_and_promises/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/05_exposing_callback_and_promises/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/06_generators_simple/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/06_generators_simple/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/07_generators_iterators/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/07_generators_iterators/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/08_generators_passing_values/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/08_generators_passing_values/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/09_generators_passing_errors/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/09_generators_passing_errors/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/10_generators_async_flow/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/10_generators_async_flow/clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/11_generators_async_flow_thunks/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/11_generators_async_flow_thunks/clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/12_generators_sequential_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/12_generators_sequential_execution/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/12_generators_sequential_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/12_generators_sequential_execution/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/13_generators_parallel_execution_a/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/13_generators_parallel_execution_a/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/13_generators_parallel_execution_a/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/13_generators_parallel_execution_a/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/14_generators_parallel_execution_b/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/14_generators_parallel_execution_b/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/14_generators_parallel_execution_b/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/14_generators_parallel_execution_b/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/15_generators_limited_parallel/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/15_generators_limited_parallel/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/15_generators_limited_parallel/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/15_generators_limited_parallel/taskQueue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/15_generators_limited_parallel/utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/16_async_await/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/16_async_await/index.es5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/16_async_await/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter04/16_async_await/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/01_gzip_buffer/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/01_gzip_buffer/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/02_gzip_streams/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/02_gzip_streams/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/03_gzip_server/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/03_gzip_server/gzipReceive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/03_gzip_server/gzipSend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/04_gzip_crypto_server/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/04_gzip_crypto_server/gzipReceive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/04_gzip_crypto_server/gzipSend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/05_streams_flowing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/05_streams_flowing/readStdin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/06_streams_flowing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/06_streams_flowing/readStdin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/07_streams_readable/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/07_streams_readable/generateRandom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/07_streams_readable/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/07_streams_readable/randomStream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/08_streams_writable/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/08_streams_writable/entropyServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/08_streams_writable/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/09_streams_writable_back_pressure/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/09_streams_writable_back_pressure/entropyServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/09_streams_writable_back_pressure/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/10_streams_writable_implement/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/10_streams_writable_implement/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/10_streams_writable_implement/toFileStream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/10_streams_writable_implement/writeToFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/11_streams_transform/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/11_streams_transform/replaceStream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/11_streams_transform/replaceStreamTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/12_streams_transform_pipes/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/12_streams_transform_pipes/replace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/12_streams_transform_pipes/replaceStream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/13_streams_sequential_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/13_streams_sequential_execution/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/13_streams_sequential_execution/concatFiles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/13_streams_sequential_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/13_streams_sequential_execution/part1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/13_streams_sequential_execution/part2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/13_streams_sequential_execution/part3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/14_streams_unordered_parallel_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/14_streams_unordered_parallel_execution/checkUrls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/14_streams_unordered_parallel_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/14_streams_unordered_parallel_execution/parallelStream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/14_streams_unordered_parallel_execution/urlList.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/15_streams_unordered_limited_parallel_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/15_streams_unordered_limited_parallel_execution/checkUrls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/15_streams_unordered_limited_parallel_execution/limitedParallelStream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/15_streams_unordered_limited_parallel_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/15_streams_unordered_limited_parallel_execution/urlList.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/16_streams_ordered_parallel_execution/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/16_streams_ordered_parallel_execution/checkUrls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/16_streams_ordered_parallel_execution/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/16_streams_ordered_parallel_execution/urlList.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/17_streams_combined_a/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/17_streams_combined_a/archive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/17_streams_combined_a/combinedStreams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/17_streams_combined_a/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/18_streams_combined_b/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/18_streams_combined_b/archive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/18_streams_combined_b/combinedStreams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/18_streams_combined_b/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/19_streams_fork/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/19_streams_fork/generateHashes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/20_streams_merge/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/20_streams_merge/mergeTar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/20_streams_merge/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/21_streams_mux_demux/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/21_streams_mux_demux/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/21_streams_mux_demux/generateData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter05/21_streams_mux_demux/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/01_factory_simple_a/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/01_factory_simple_a/factory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/01_factory_simple_a/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/02_factory_simple_b/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/02_factory_simple_b/factory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/02_factory_simple_b/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/02_factory_simple_b/imageGif.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/02_factory_simple_b/imageJpeg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/02_factory_simple_b/imagePng.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/03_factory_encapsulation/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/03_factory_encapsulation/createPerson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/04_factory_profiler/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/04_factory_profiler/profiler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/04_factory_profiler/profilerTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/05_factory_composable/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/05_factory_composable/game.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/05_factory_composable/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/06_revealing_constructor/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/06_revealing_constructor/example.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/06_revealing_constructor/roee.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/06_revealing_constructor/ticker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/07_proxy_a/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/07_proxy_a/createProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/07_proxy_a/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/08_proxy_b/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/08_proxy_b/createProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/08_proxy_b/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/09_proxy_c/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/09_proxy_c/createProxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/09_proxy_c/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/10_proxy_logging_writable_stream/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/10_proxy_logging_writable_stream/loggingWritable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/11_proxy_es2015/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/11_proxy_es2015/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/11_proxy_es2015_b/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/11_proxy_es2015_b/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/12_decorator_a/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/12_decorator_a/decorator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/13_decorator_b/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/13_decorator_b/decorator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/14_decorator_levelup_plugin/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/14_decorator_levelup_plugin/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/14_decorator_levelup_plugin/levelSubscribe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/14_decorator_levelup_plugin/levelSubscribeTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/14_decorator_levelup_plugin/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/15_adapter/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/15_adapter/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/15_adapter/fsAdapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/15_adapter/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/15_adapter/testFs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/15_adapter/testFsAdapter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/16_strategy/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/16_strategy/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/16_strategy/configTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/16_strategy/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/16_strategy/samples/conf.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/16_strategy/samples/conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/16_strategy/strategies.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/17_state/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/17_state/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/17_state/failsafeSocket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/17_state/offlineState.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/17_state/onlineState.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/17_state/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/17_state/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/18_template/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/18_template/configTemplate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/18_template/configTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/18_template/jsonConfig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/18_template/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/18_template/samples/conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/19_middleware_zmq/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/19_middleware_zmq/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/19_middleware_zmq/jsonMiddleware.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/19_middleware_zmq/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/19_middleware_zmq/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/19_middleware_zmq/zmqMiddlewareManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/20_middleware_generators/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/20_middleware_generators/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/20_middleware_generators/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/20_middleware_generators/rateLimit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/21_command/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/21_command/command.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/21_command/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter06/21_command/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/example-db/000005.ldb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/example-db/000008.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/example-db/CURRENT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/example-db/LOCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/example-db/LOG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/example-db/LOG.old" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/example-db/MANIFEST-000007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/01_hard-coded_dependency/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/02_di/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/lib/serviceLocator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03a_service_locator/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/03b_express_service_locator/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/lib/diContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/04_di_container/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/05_plugin_module_impersonation/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/lib/serviceLocator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/06_plugin_service_locator/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/07_plugin_di/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/lib/authController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/lib/authService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/lib/diContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter07/08_plugin_di_container/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/01_umd/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/01_umd/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/01_umd/testBrowser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/01_umd/testServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/01_umd/umdModule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/02_amd/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/02_amd/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/02_amd/umdModule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/02_amd/using_amd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/03_webpack/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/03_webpack/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/03_webpack/magic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/03_webpack/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/03_webpack/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/03_webpack/sayHello.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/04_webpack_es2015/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/04_webpack_es2015/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/04_webpack_es2015/magic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/04_webpack_es2015/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/04_webpack_es2015/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/04_webpack_es2015/src/sayHello.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/04_webpack_es2015/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/05_runtime_code_branching/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/05_runtime_code_branching/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/05_runtime_code_branching/magic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/05_runtime_code_branching/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/05_runtime_code_branching/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/05_runtime_code_branching/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/06_buildtime_code_branching/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/06_buildtime_code_branching/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/06_buildtime_code_branching/magic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/06_buildtime_code_branching/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/06_buildtime_code_branching/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/06_buildtime_code_branching/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/07_webpack_define_plugin_dynamic_variables/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/07_webpack_define_plugin_dynamic_variables/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/07_webpack_define_plugin_dynamic_variables/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/07_webpack_define_plugin_dynamic_variables/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/07_webpack_define_plugin_dynamic_variables/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/magic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/src/alertBrowser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/src/alertServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_a/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/magic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/src/alertBrowser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/src/alertServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/08_buildtime_module_swapping_b/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/09_react_rendering_browser/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/09_react_rendering_browser/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/09_react_rendering_browser/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/09_react_rendering_browser/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/09_react_rendering_browser/src/joyceBooks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/09_react_rendering_browser/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/09_react_rendering_browser/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/src/components/authorsIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/src/components/joyceBooks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/src/components/notFound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/src/components/wellsBooks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/src/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/10_react_router/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/src/authors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/src/components/authorPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/src/components/authorsIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/src/components/notFound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/src/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/11_react_reusable_components/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/src/authors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/src/components/authorPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/src/components/authorsIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/src/components/notFound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/src/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/src/routesConfig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/views/index.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/12_react_server_side_rendering/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/src/authors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/src/components/authorPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/src/components/authorsIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/src/components/notFound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/src/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/src/routesConfig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/views/index.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/13_universal_rendering_and_routing/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/apiServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/authors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/components/authorPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/components/authorsIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/components/notFound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/routesConfig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/src/xhrClient.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/views/index.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/webServer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter08/14_universal_data_retrieval/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/01_async_init_wrong/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/01_async_init_wrong/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/01_async_init_wrong/asyncModule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/01_async_init_wrong/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/02_async_init_queues/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/02_async_init_queues/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/02_async_init_queues/asyncModule.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/02_async_init_queues/asyncModuleWrapper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/02_async_init_queues/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/appPromises.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/loadTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/populate_db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/totalSales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/totalSalesBatch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/totalSalesCache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/03_batching_and_caching/totalSalesPromises.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/04_cpu_bound/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/04_cpu_bound/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/04_cpu_bound/processPool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/04_cpu_bound/subsetSum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/04_cpu_bound/subsetSumDefer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/04_cpu_bound/subsetSumFork.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter09/04_cpu_bound/subsetSumWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/01_cluster/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/01_cluster/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/01_cluster/clusteredApp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/02_cluster_resiliency/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/02_cluster_resiliency/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/02_cluster_resiliency/clusteredApp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/03_cluster_zero_downtime/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/03_cluster_zero_downtime/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/03_cluster_zero_downtime/clusteredApp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/04_reverse_proxy_nginx/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/04_reverse_proxy_nginx/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/04_reverse_proxy_nginx/nginx.patch.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/05_service_registry/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/05_service_registry/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/05_service_registry/loadBalancer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/05_service_registry/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/06_peer2peer_loadbalancing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/06_peer2peer_loadbalancing/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/06_peer2peer_loadbalancing/balancedRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/06_peer2peer_loadbalancing/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/07_dynamic_peer2peer_loadbalancing/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/07_dynamic_peer2peer_loadbalancing/apiRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/07_dynamic_peer2peer_loadbalancing/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/07_dynamic_peer2peer_loadbalancing/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/07_dynamic_peer2peer_loadbalancing/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/01_basic_chat/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/01_basic_chat/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/01_basic_chat/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/01_basic_chat/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/02_chat_redis/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/02_chat_redis/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/02_chat_redis/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/02_chat_redis/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/03_chat_zmq/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/03_chat_zmq/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/03_chat_zmq/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/03_chat_zmq/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/historySvc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/msgHistory/000005.ldb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/msgHistory/000006.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/msgHistory/CURRENT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/msgHistory/LOCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/msgHistory/LOG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/msgHistory/LOG.old" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/msgHistory/MANIFEST-000004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/04_durable_sub/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/05_fanout_fanin/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/05_fanout_fanin/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/05_fanout_fanin/sink.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/05_fanout_fanin/ventilator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/05_fanout_fanin/worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/06_competing_consumers/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/06_competing_consumers/collector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/06_competing_consumers/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/06_competing_consumers/producer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/06_competing_consumers/worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/07_correlation_id/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/07_correlation_id/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/07_correlation_id/replier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/07_correlation_id/reply.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/07_correlation_id/request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/07_correlation_id/requestor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/08_return_address/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/08_return_address/amqpReply.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/08_return_address/amqpRequest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/08_return_address/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/08_return_address/replier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/08_return_address/requestor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,61 +668,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subsetSumDefer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subsetSumDefer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="processPool.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/processPool.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subsetSumFork.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/subsetSumFork.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subsetSumWorker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subsetSumWorker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subsetSum.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subsetSum.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="-388">
+              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -114,6 +708,8 @@
       <find>destroyUpdate</find>
       <find>sendUpdate</find>
       <find>this.file</find>
+      <find>routing</find>
+      <find>qName</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -125,20 +721,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bin/www" />
-        <option value="$PROJECT_DIR$/modules/math.js" />
-        <option value="$PROJECT_DIR$/hello-node-http-server.js" />
-        <option value="$PROJECT_DIR$/test/test-math.js" />
-        <option value="$PROJECT_DIR$/test/test-http-module.js" />
-        <option value="$PROJECT_DIR$/test/prepare.js" />
-        <option value="$PROJECT_DIR$/test/contact-model-test.js" />
-        <option value="$PROJECT_DIR$/modules/contactdataservice.js" />
-        <option value="$PROJECT_DIR$/../RESTful Web API Design with Node.js/Chapter 5/full-fledged-service.txt" />
-        <option value="timers.js" />
-        <option value="$PROJECT_DIR$/app/local.config.json" />
-        <option value="$PROJECT_DIR$/../A-Hands-On-Guide-to-Building-Web-Applications-in-JavaScript-2nd-master/Chapter10/01_simple/02_occasional_crash.js" />
-        <option value="$PROJECT_DIR$/../A-Hands-On-Guide-to-Building-Web-Applications-in-JavaScript-2nd-master/Chapter10/02_ninja/node_ninja_runner.sh" />
-        <option value="$PROJECT_DIR$/02_occasional_crash.js" />
         <option value="$PROJECT_DIR$/app/run.sh" />
         <option value="$PROJECT_DIR$/app/node_ninja_runner.sh" />
         <option value="$PROJECT_DIR$/01_functional.js" />
@@ -153,7 +735,6 @@
         <option value="$PROJECT_DIR$/app/data.txt" />
         <option value="$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter02/10_module_loader/moduleB.js" />
         <option value="$PROJECT_DIR$/app/server.js" />
-        <option value="$PROJECT_DIR$/app/package.json" />
         <option value="$PROJECT_DIR$/app/index.js" />
         <option value="$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter05/01_gzip_buffer/index.js" />
         <option value="$PROJECT_DIR$/index.js" />
@@ -176,6 +757,21 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/Chapter10/01_cluster/app.js" />
+        <option value="$PROJECT_DIR$/Chapter10/01_cluster/clusteredApp.js" />
+        <option value="$PROJECT_DIR$/app/clusteredApp.js" />
+        <option value="$PROJECT_DIR$/Chapter10/04_reverse_proxy_nginx/nginx.patch.conf" />
+        <option value="$PROJECT_DIR$/app/balancedRequest.js" />
+        <option value="$PROJECT_DIR$/app/apiRequest.js" />
+        <option value="$PROJECT_DIR$/app/www/index.html" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/package.json" />
+        <option value="$PROJECT_DIR$/app/producer.js" />
+        <option value="$PROJECT_DIR$/app/worker.js" />
+        <option value="$PROJECT_DIR$/app/collector.js" />
+        <option value="$PROJECT_DIR$/app/reply.js" />
+        <option value="$PROJECT_DIR$/app/replier.js" />
+        <option value="$PROJECT_DIR$/config.json" />
       </list>
     </option>
   </component>
@@ -185,11 +781,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="39" />
-    <option name="width" value="1064" />
-    <option name="height" value="693" />
+    <option name="x" value="32" />
+    <option name="y" value="100" />
+    <option name="width" value="1248" />
+    <option name="height" value="658" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -207,20 +806,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restful.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restful.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -231,6 +816,20 @@
             <PATH_ELEMENT USER_OBJECT="restful.git">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restful.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restful.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -426,6 +1025,10 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4c69a3c4-11f4-408e-8239-0d20801b23ac" name="Default" comment="" />
@@ -445,25 +1048,27 @@
       <workItem from="1492902785336" duration="1543000" />
       <workItem from="1493355908888" duration="1280000" />
       <workItem from="1493443731628" duration="246000" />
-      <workItem from="1493444010208" duration="59556000" />
+      <workItem from="1493444010208" duration="59728000" />
+      <workItem from="1494039735705" duration="17807000" />
+      <workItem from="1494579201735" duration="63000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131705000" />
+    <option name="totallyTimeSpent" value="149747000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="39" width="1064" height="693" extended-state="0" />
+    <frame x="32" y="100" width="1248" height="658" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21284756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20456398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4031142" sideWeight="0.3212011" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.109540634" sideWeight="0.3212011" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3979239" sideWeight="0.43681318" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24957699" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08637874" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13144758" sideWeight="0.6787989" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13144758" sideWeight="0.6787989" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -494,48 +1099,145 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/subsetSumFork.js</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="116" />
+          <url>file://$PROJECT_DIR$/app/amqpReply.js</url>
+          <line>5</line>
+          <option name="timeStamp" value="120" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="117" />
+      <option name="time" value="121" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client.js">
+    <entry file="file://$PROJECT_DIR$/magic.html" />
+    <entry file="file://$PROJECT_DIR$/src/main.js" />
+    <entry file="file://$PROJECT_DIR$/asyncModule.js" />
+    <entry file="file://$PROJECT_DIR$/asyncModuleWrapper.js" />
+    <entry file="file://$PROJECT_DIR$/routes.js" />
+    <entry file="file://$PROJECT_DIR$/package.json" />
+    <entry file="file://$PROJECT_DIR$/populate_db.js" />
+    <entry file="file://$PROJECT_DIR$/loadTest.js" />
+    <entry file="file://$PROJECT_DIR$/totalSalesBatch.js" />
+    <entry file="file://$PROJECT_DIR$/totalSalesCache.js" />
+    <entry file="file://$PROJECT_DIR$/totalSales.js" />
+    <entry file="file://$PROJECT_DIR$/totalSalesPromises.js" />
+    <entry file="file://$PROJECT_DIR$/appPromises.js" />
+    <entry file="file://$PROJECT_DIR$/README.txt" />
+    <entry file="file://$PROJECT_DIR$/subsetSum.js" />
+    <entry file="file://$PROJECT_DIR$/app.js" />
+    <entry file="file://$PROJECT_DIR$/subsetSumWorker.js" />
+    <entry file="file://$PROJECT_DIR$/subsetSumFork.js" />
+    <entry file="file://$PROJECT_DIR$/processPool.js" />
+    <entry file="file://$PROJECT_DIR$/subsetSumDefer.js" />
+    <entry file="file://$PROJECT_DIR$/Chapter10/01_cluster/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/01_cluster/clusteredApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/02_cluster_resiliency/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/02_cluster_resiliency/clusteredApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/03_cluster_zero_downtime/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/03_cluster_zero_downtime/clusteredApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/clusteredApp.js" />
+    <entry file="file://$PROJECT_DIR$/Chapter10/04_reverse_proxy_nginx/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/04_reverse_proxy_nginx/nginx.patch.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/05_service_registry/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/05_service_registry/loadBalancer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/loadBalancer.js" />
+    <entry file="file://$PROJECT_DIR$/app/balancedRequest.js" />
+    <entry file="file://$PROJECT_DIR$/app/client.js" />
+    <entry file="file://$PROJECT_DIR$/app/apiRequest.js" />
+    <entry file="file://$PROJECT_DIR$/app/app.js" />
+    <entry file="file://$PROJECT_DIR$/app/historySvc.js" />
+    <entry file="file://$PROJECT_DIR$/app/www/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/sink.js" />
+    <entry file="file://$PROJECT_DIR$/app/ventilator.js" />
+    <entry file="file://$PROJECT_DIR$/app/collector.js" />
+    <entry file="file://$PROJECT_DIR$/app/producer.js" />
+    <entry file="file://$PROJECT_DIR$/app/worker.js" />
+    <entry file="file://$PROJECT_DIR$/app/reply.js" />
+    <entry file="file://$PROJECT_DIR$/app/request.js" />
+    <entry file="file://$PROJECT_DIR$/app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/requestor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rateLimit.js">
+    <entry file="file://$PROJECT_DIR$/app/amqpRequest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/command.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/app/replier.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -543,378 +1245,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/01_hard-coded_dependency/lib/authController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/01_hard-coded_dependency/lib/authService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/01_hard-coded_dependency/lib/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/serviceLocator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/03b_express_service_locator/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/03b_express_service_locator/lib/authController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/03b_express_service_locator/lib/authService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/03b_express_service_locator/lib/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/diContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/authService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/authController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/06_plugin_service_locator/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/06_plugin_service_locator/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/08_plugin_di_container/lib/diContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/08_plugin_di_container/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter07/07_plugin_di/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testBrowser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/using_amd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umdModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Node.js_Design_Patterns_Second_Edition_Code-master/Chapter08/02_amd/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sayHello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sayHello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magic.html">
+    <entry file="file://$PROJECT_DIR$/app/amqpReply.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
+    <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asyncModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asyncModuleWrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/populate_db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalSalesBatch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalSalesCache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalSales.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalSalesPromises.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appPromises.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subsetSumDefer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processPool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subsetSum.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subsetSumWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subsetSumFork.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="-388">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding />
         </state>
       </provider>

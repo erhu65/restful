@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .container
+        //a(href="/login") Login
+        if (isPhone)
+            p Your Account active successfully.
+            a(href="bonraybio://") open App
+        if(!isPhone)
+            a(href="/login") Login via Bonraybio web page
+            p Or open Bonraybio App to login
