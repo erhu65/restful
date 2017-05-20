@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c69a3c4-11f4-408e-8239-0d20801b23ac" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/util_test.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/coverage.json" afterPath="$PROJECT_DIR$/coverage/coverage.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/lcov-report/src/index.html" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/lcov-report/src/palindrome.js.html" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/palindrome.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/lcov-report/src/util.js.html" afterPath="$PROJECT_DIR$/coverage/lcov-report/src/util.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coverage/lcov.info" afterPath="$PROJECT_DIR$/coverage/lcov.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/palindrome-test.js" afterPath="$PROJECT_DIR$/test/palindrome-test.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +32,8 @@
       <file leaf-file-name="palindrome.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/palindrome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,8 +42,8 @@
       <file leaf-file-name="palindrome-test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/palindrome-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="155">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="36" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -219,6 +227,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restful.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restful.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coverage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restful.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restful.git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coverage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lcov-report" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,7 +485,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157020000" />
+    <option name="totallyTimeSpent" value="157743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="50" width="1248" height="651" extended-state="0" />
@@ -509,7 +549,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/subsetSumWorker.js" />
     <entry file="file://$PROJECT_DIR$/subsetSumFork.js" />
     <entry file="file://$PROJECT_DIR$/processPool.js" />
     <entry file="file://$PROJECT_DIR$/subsetSumDefer.js" />
@@ -665,18 +704,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/coverage/lcov-report/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/palindrome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/palindrome-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="155">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="36" selection-end-column="8" />
           <folding />
         </state>
       </provider>
